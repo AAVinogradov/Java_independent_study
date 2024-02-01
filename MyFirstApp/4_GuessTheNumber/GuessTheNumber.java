@@ -12,6 +12,7 @@ public class GuessTheNumber {
             System.out.println("Угадали!");
         } else {
             System.out.println("Не угадали");
+            scanner.close();
         }
     }
 }
