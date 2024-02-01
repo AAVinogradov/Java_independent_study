@@ -11,6 +11,7 @@ public class conditions {
             System.out.println("Вы ввели ноль");
         } else {
             System.out.println("Вы ввели отрицательное число");
+            scan.close();
         }
     }
 }
