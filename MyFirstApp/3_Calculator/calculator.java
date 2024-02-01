@@ -25,7 +25,8 @@ public class calculator {
             System.out.println(a + " / " + b + " = " + result);
         } else {
             System.out.println("Указанная операция не поддерживается калькулятором");
+            sc.close();
         }
-
+System.out.println("End");
     }
 }
