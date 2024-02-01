@@ -11,6 +11,7 @@ public class MyApp {
         int c = sc.nextInt();
         int sum = a + b + c;
         System.out.println("Сумма чисел " + a + ", " + b + " и " + c + " равна: " + sum);
+        sc.close();
 
     }
 }
