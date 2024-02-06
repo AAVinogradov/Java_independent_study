@@ -17,7 +17,7 @@ public class ConsoleRPG {
         System.out.println("Игра началась!");
         System.out.println("Герой " + heroName + " вошел в лес и видит перед собой монстра по имени " + monsterName + ". Деваться некуда, придется вступить в бой.");
         System.out.println("Бой начинается!");
-        System.out.println("выберите действие: 1 - атаковать. 2 - защищаться.");
+        System.out.println("Ход героя: выберите действие: 1 - атаковать. 2 - защищаться.");
         int command = scanner.nextInt();
         if (command == 1) {
             System.out.println("Вы атаковали монстра по имени " + monsterName + " и он получает " + heroAttak + " единиц урона");
