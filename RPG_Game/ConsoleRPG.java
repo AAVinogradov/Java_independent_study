@@ -11,13 +11,14 @@ public class ConsoleRPG {
         String heroName = scanner.next();
         int heroHP = 10;
         int heroAttak = 4;
+        int heroMoney = 0;
         String monsterName = "Орк";
         int monsterHP = 8;
         int monsterAttak = 3;
         System.out.println("Игра началась!");
         System.out.println("Герой  в " + heroName + " вошел в лес и видит перед собой монстра по имени " + monsterName + ". Деваться некуда, придется вступитьбой.");
         System.out.println("Бой начинается!");
-        while (true) 
+        while (true) {
         // Логика хода игрока
         System.out.println("Ход героя: выберите действие: 1 - атаковать. 2 - защищаться.");
         int command = scanner.nextInt();
@@ -29,7 +30,8 @@ public class ConsoleRPG {
                 monsterHP -= heroAttak;
             }
             if (monsterHP <= 0) {
-                System.out.println("" + heroName + " победил! У монстра по имени " + monsterName + " закончились жизни.");
+                System.out.println("" + heroName + " победил и заработал 100 золотых! У монстра по имени " + monsterName + " закончились жизни.");
+                heroMoney += 100;
                 break;
             }
         } else if (command == 2) {
@@ -50,12 +52,12 @@ public class ConsoleRPG {
                 break;
             }
         } else if (monsterCommand == 1) {
-            System.out.println("Монстр " + monsterName +  " защищается, герой  и получает 5 единиц здоровья");
+            System.out.println("Монстр " + monsterName +  " защищается, и получает 5 единиц здоровья");
             monsterHP += 5;
         }
         System.out.println("Промежуточная статистика: Герой " + heroName + " имеет " + heroHP + " единиц здоровья. Монстр " + monsterName + " имеет " + monsterHP + " единиц здоровья");
-        
-
-        System.out.println("Игра закончилась");
     }
+    System.out.println("Игра закончилась");
+    scanner.close();
+}
 }
