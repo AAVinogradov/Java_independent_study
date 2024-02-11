@@ -12,8 +12,20 @@ public class Methods {
         System.out.println("Введите чило для проверик на четность: ");
         int f = scanner.nextInt();
         isNegative(f);
+        boolean y = codeExamole(f);
+        System.out.println(y);
+        scanner.close();
         
 
+    }
+    public static boolean codeExamole(int n) {
+        System.out.println(1);
+        if (n > 0) {
+            return true;
+        }
+        System.out.println(2);
+        System.out.println(3);
+        return false;
     }
 
     public static boolean isPositive(int number) {
@@ -63,4 +75,5 @@ public class Methods {
         int result = a + b + c;
         System.out.println(result);
     }    
+    
 }
