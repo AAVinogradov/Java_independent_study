@@ -1,6 +1,8 @@
+// Реализуйте метод, который принимает в качестве аргументов два целых числа и возвращает true если их сумма >= 0, и false в противном случае.
+
 import java.util.Scanner;
 
-public class HomeWork {
+public class HomeWork_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число a: ");
