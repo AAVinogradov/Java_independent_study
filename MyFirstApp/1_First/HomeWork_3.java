@@ -7,12 +7,13 @@ public class HomeWork_3 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число a: ");
         int a = scanner.nextInt();
-        invert(a);
+        int result = invert(a);
+        System.out.println("Инвертированное число " + result);
         scanner.close();
     }
 
-    public static void invert(int a) {
+    public static int invert(int a) {
         int result = a - a - a;
-        System.out.println("Инвертированное число " + result);
+        return result;
     }
 }
