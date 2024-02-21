@@ -30,7 +30,7 @@ public class ConsoleRPG {
                 monsterHP -= heroAttak;
             }
             if (monsterHP <= 0) {
-                System.out.println("" + heroName + " победил и заработал 100 золотых! У монстра по имени " + monsterName + " закончились жизни.");
+                System.out.println("" + heroName + " победил и заработал 100 золотых. В кошельке теперь " + heroMoney + " ! У монстра по имени " + monsterName + " закончились жизни.");
                 heroMoney += 100;
                 break;
             }
