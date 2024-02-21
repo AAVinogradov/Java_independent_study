@@ -1,8 +1,9 @@
-package 2_Conditions;
+package Conditions;
 
 import java.util.Scanner;
 
 public class Conditions {
+    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите число");
