@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class HpomeWork_7 {
+public class HomeWork_7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите a: ");
