@@ -19,6 +19,20 @@ public class ArraysCycles {
         manualPrintArray();
         System.out.println("Hello, world!");
         System.out.println(sumArr(new int[] { 1, 2, 3, 4, 5 }));
+        sumMultiArr();
+        int [] [] arr = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        char [] [] arr2 = {
+            {'*', '*', '*'},
+            {'*', '*', '*'},
+            {'*', '*', '*'},
+        };
+        System.out.println(sum2DArray(arr));
+        print2DArray(arr);
+        printPole(arr2);
        
     }
     
@@ -166,7 +180,61 @@ public class ArraysCycles {
        
     }
 
+    public static void sumMultiArr() { //суммирование элементов двумерного массива
+        int [] [] arr = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                sum += arr[i][j];
+
+            }
+            System.out.println(sum);
+            
+        }
+        
+    }
 
 
+    public static int sum2DArray (int [][] array) { // суммирование элементов двумерного массива через метод
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                sum += array[i][j];
+            }
+        }
+        return sum;
+    }
+
+    public static void print2DArray (int [][] array) { // печать элементов двумерного массива через метод
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+            System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+    public static void printPole (char [][] array) { // печать элементов двумерного массива через метод + заголовки осей
+        // System.out.print("  ");
+        // for (int i = 0; i < array[0].length; i++) {
+        for (int i = 0; i <= array[0].length; i++) {
+
+            System.out.print(i + " "); // (i + 1) чтоб сместить начало сетки
+        }
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print((i + 1) + " "); // (i + 1) чтоб сместить начало сетки
+            for (int j = 0; j < array[i].length; j++) {
+            System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
     
+}
 }
