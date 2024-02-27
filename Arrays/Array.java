@@ -50,7 +50,18 @@ public class Array {
 
         int[] arr5 = {2, 9, 4, 7, 6, 7, 32, 3, 10, 21, 12, 44};
         System.out.println(Arrays.toString(arr5));
+        int [] doubleArray = createDoubleArray(arr5);
+        System.out.println(Arrays.toString(arr5));
+        System.out.println(Arrays.toString(doubleArray));
 
+    }
+
+    public static int[] createDoubleArray(int [] in) { // дублирование массива чтоб исходный не поменять. При работе с ссылочными типами данных меняются исходники и для этого их лучше скопировать. 
+        int [] out = new int[in.length];
+        for (int i = 0; i < out.length; i++) {
+            out[i] = in[i] * 2;
+        }
+        return out;
     }
     
     
