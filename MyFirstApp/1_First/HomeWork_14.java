@@ -14,19 +14,25 @@ public class HomeWork_14 {
 
     public static void createArray (int size) {
     if (size % 2 == 0) {
+        System.out.print("[ ");
         for (int i = 1; i <= size / 2; i ++) {
             System.out.print(i + " ");
         }
         for (int j = size / 2; j >= 1; j --) {
             System.out.print(j + " ");
         }   
+        System.out.print("]");
     } else {
+        System.out.print("[ ");
         for (int i = 1; i <= size / 2 + 1; i ++) {
             System.out.print(i + " ");
         }
+
         for (int j = size / 2; j >= 1; j --) {
             System.out.print(j + " ");
         }   
+        System.out.print("]");
+
     }
     }
 }
