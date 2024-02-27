@@ -18,7 +18,7 @@ public class HomeWork_12 {
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j] + " ");
 
-                if (j == i && j == arr.length - 1 - i) {
+                if (j == i) {
                     sum += arr[i][j];
                 }
             }
