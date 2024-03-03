@@ -3,18 +3,22 @@ package OOPConsoleRPG;
 public class MainApplication {
 
     public static void main(String[] args) {
-        Unit hero = new Unit("Jack", 10, 4);
-        Unit monster = new Unit("Ork", 6, 2);
+        Unit hero = new Unit("Jack", 30, 4, 2);
+        Unit monster = new Unit("Ork", 20, 5, 1);
 
-        monster.printInfo();
+        hero.beginTurn();
         hero.attack(monster);
-        monster.printInfo();
 
-        hero.printInfo();
-        monster.attack(hero);
+        monster.beginTurn();
         monster.attack(hero);
 
-        hero.printInfo();
+
+        // System.out.println("Герой идет по подземелью и наступает в ловушку");
+        // hero.takeDamage(5);
+        // hero.cure(1);
+        // hero.setName("Bob");
+        // System.out.println(hero.getName());
+        
 
 
     }
